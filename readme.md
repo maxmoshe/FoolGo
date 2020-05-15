@@ -3,8 +3,8 @@
 
 # proposed changes by eyal:
 
-  - ~~ n word ~~
-  - ~~ niger ~~
+  - ~~n word~~
+  - ~~niger~~
   
   
   :shipit::shipit::shipit:
