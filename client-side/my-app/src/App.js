@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './9502.png'; //'./logo.svg';
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <a href="google.com" className="Complaint" style={{fontSize: 35, textDecoration: 'none', color: 'white'}}>Submit a complaint.</a>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

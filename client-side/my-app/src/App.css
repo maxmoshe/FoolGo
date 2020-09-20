@@ -9,7 +9,14 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .Complaint {
+    animation: App-logo-spin 5s ease;
   }
 }
 
