@@ -16,7 +16,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Complaint {
-    animation: App-logo-spin 5s ease;
+    animation: App-logo-spin 3.65s ease;
   }
 }
 
@@ -32,8 +32,11 @@
 }
 
 .App-link {
-  color: #61dafb;
   color: #EF6422;
+}
+
+.App-link:hover{
+  cursor: pointer
 }
 
 @keyframes App-logo-spin {
