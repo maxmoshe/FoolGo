@@ -10,6 +10,12 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .Enemy {
+    animation: Circle-page 10s infinite;
+  }
+}
+
 /* App */
 
 .App {
@@ -108,4 +114,12 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+@keyframes Circle-page{
+  0%   {top: 0px; left: 0px;}
+  25%  {top: 0px; left: 94.5%;}
+  50%  {top: 86%; left: 94.5%;}
+  75%  {top: 86%; left: 0px;}
+  100% {top: 0px; left: 0px;}
 }
