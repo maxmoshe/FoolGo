@@ -13,7 +13,6 @@ class App extends React.Component{
       <div className="App" >
         <header className="App-header">
         <Navbar/>
-        <Login/>
         </header>
       </div>
     )
