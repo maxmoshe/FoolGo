@@ -3,14 +3,18 @@ import {NavLink, Route} from 'react-router-dom'
 
 function Register(){
     return(
-        <div id="Login" style={{display: 'flex', flexDirection: "column",alignItems: 'center',border: '1px solid #0e86ca', borderRadius: '5px', padding: 10, backgroundColor: 'grey', width: '20%'}}>
-            <h3 style={{color: '#065294', textDecoration: 'none'}}>Register</h3>
-            <input type="text" placeholder="Email address" style={{width: '70%', height: 30, borderRadius: 3}}></input>
-            <input type="password" placeholder="Password" autoComplete="false" style={{width: '70%', height: 30, borderRadius: 3, margin: 5}}></input>
-            <button style={{width: '70%', backgroundImage: 'linear-gradient(326deg, #065294 0%, #5f0a87 74%)', border: 'none', color: 'white', height: 30, borderRadius: 3, margin: 5}}>Register</button>
-            <NavLink to='login'>
-                <a href="google.com" style={{color: "white", textDecoration: 'none',}}>Log in</a>
+        <div id="Login" style={{display: 'flex', flexDirection: "column", backgroundColor: '#313640', alignItems: 'center', justifyContent: 'space-around', borderRadius: '10px', padding: 10, width: '30vw', minHeight: '35vh', minWidth: 300}}>
+            <h3 style={{textDecoration: 'none'}}>Registrar</h3>
+            <div style={{display: 'flex', height: 70, flexDirection: "column", justifyContent: 'space-between', alignItems: 'center', width: '70%'}}>
+            <input type="text" className="login-input" placeholder="Email address"></input>
+            <input type="password" placeholder="Password" autoComplete="false" className="login-input" style={{margin: 5}}></input>
+            </div>
+            <div style={{width: '70%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}} >
+            <button style={{width: '100%', backgroundImage: 'linear-gradient(326deg, #a4508b 0%, #5f0a87 74%)', border: 'none', color: 'white', height: 30, borderRadius: 3, fontSize: 20}}>Register</button>
+            <NavLink to="/login">
+                <a style={{color: "white", fontSize: 14}}>Login</a>
             </NavLink>
+            </div>
         </div>
     )
 }

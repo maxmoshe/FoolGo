@@ -21,6 +21,7 @@ class App extends React.Component{
           <NavLink to="/register">{this.state.dor}</NavLink>
         </header>
         <body>
+        <Navbar></Navbar>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/register" component={Register}/>
         </body>
