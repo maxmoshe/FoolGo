@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import About from './components/About';
 import './App.css';
 
 class App extends React.Component{
@@ -21,6 +22,7 @@ class App extends React.Component{
         <Navbar></Navbar>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/register" component={Register}/>
+        <Route exact path="/about" component={About}/>
         </body>
       </div>
       </Router>
