@@ -45,6 +45,17 @@
   cursor: pointer;
 }
 
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-width: 100vw;
+}
+
 /* Navbar */
 
 .Navbar {
@@ -122,4 +133,28 @@
   50%  {top: 86%; left: 94.5%;}
   75%  {top: 86%; left: 0px;}
   100% {top: 0px; left: 0px;}
+}
+
+/* Login in/ Registrar */
+
+
+.login-input {
+  background-color: transparent;
+  width: 100%;
+  height: 30;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  color: snow;
+  padding-left: 5px;
+}
+
+.eggradient{
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+input:focus {
+  outline:none;
+  border-bottom: 1px solid #a4508b;
 }
