@@ -17,9 +17,6 @@ class App extends React.Component{
     return(
       <Router>
       <div className="App" >
-        <header className="App-header">
-          <NavLink to="/register">{this.state.dor}</NavLink>
-        </header>
         <body>
         <Navbar></Navbar>
         <Route exact path="/login" component={Login}/>

@@ -1,15 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 class Navbar extends React.Component {
   render() {
     return (
       <div className="Navbar">
         <div className="logo">
-          <img id="mc-ride" src={require("../mcride.jpg")} alt="life grips"></img>
+          <NavLink to="/login"><img id="mc-ride" src={require("../assets/mcride.jpg")} alt="life grips"></img></NavLink>
         </div>
         <div className="navigation">
           <ul>
-            <li>home</li>
             <li>placeholder a</li>
             <li>placeholder b</li>
             <li>placeholder c</li>
