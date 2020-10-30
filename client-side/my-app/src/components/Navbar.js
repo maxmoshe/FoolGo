@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 // components
-import UserData from './UserData'
-
+import NavbarUser from './NavbarUser';
 // assets
 import ReactLogo from '../assets/logo.svg'
 
@@ -11,19 +10,21 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="Navbar">
-        <div className="logo">
-          <NavLink to="/login"><img id="a" src={ReactLogo}></img></NavLink>
+        <NavLink to="/login">
+        <div className="logo" style={{width: 60, height: '100%', display: 'flex', justifyContent: 'center'}}>
+            <img src={ReactLogo} style={{width: 50, height: 50}}/>
         </div>
+        </NavLink>
         <div className="navigation">
           <ul>
-            <li>placeholder a</li>
-            <li>placeholder b</li>
-            <li>placeholder c</li>
+            <NavLink to="/about" style={{textDecoration: 'none', color: 'white'}}>
+              <li>About ME</li>
+            </NavLink>
+            <li>Hymns</li>
+            <li>Legal Complaints</li>
           </ul>
         </div>
-        <div className="UserData">
-          <UserData></UserData>
-        </div>
+        <NavbarUser/>
       </div>
     )
   }
