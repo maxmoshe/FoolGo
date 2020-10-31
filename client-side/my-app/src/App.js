@@ -19,10 +19,14 @@ class App extends React.Component{
       <Router>
       <div className="App">
         <body>
-        <Navbar></Navbar>
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/register" component={Register}/>
-        <Route exact path="/about" component={About}/>
+        <div className="NavbarContainer">
+          <Navbar></Navbar>
+        </div>
+        <div className="PageContainer">
+          <Route exact path="/login" component={Login}/>
+          <Route exact path="/register" component={Register}/>
+          <Route exact path="/about" component={About}/>
+        </div>
         </body>
       </div>
       </Router>
